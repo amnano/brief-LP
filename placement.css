@@ -1,0 +1,107 @@
+:root {
+    /* Font size variables */
+    --small: 14px;
+    --medium: 19px;
+    --large: 38px;
+}
+
+html {
+    line-height: 1.4;
+    -webkit-text-size-adjust: 100%;
+  }
+
+
+body {
+    height: 100%;
+}
+
+/* Add a dark mode style for the page */
+body {
+    background-color: #000617;
+    color: #F4F5F8;
+    max-width: 870px;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+}
+
+/* Use the Inter font for the page */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Add some basic styling for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    font-size: var(--small);
+    margin-bottom: 5%;
+}
+
+/* Add some basic styling for the hero section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    gap: 30px;
+}
+
+.headline {
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1vw;
+}
+
+
+/* Add some basic styling for the footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-size: var(--small);
+    margin-top: 15%;
+}
+
+/* Add some basic styling for the links */
+a {
+    color: #F4F5F8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c4c4c4;
+    transition: 0.6s;
+}
+
+img {
+    max-width: 50%;
+    width: 400px;
+}
+
+@media screen and (max-width: 700px) {
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .headline {
+        max-width: 100%;
+    }
+}
+
+h2{
+    font-size: var(--large);
+    margin: 0ch;
+}
