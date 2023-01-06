@@ -29,6 +29,10 @@ header {
     margin-bottom: 5%;
 }
 
+header img {
+max-height: var(--small);
+}
+
 /* Add some basic styling for the hero section */
 .hero {
     display: flex;
