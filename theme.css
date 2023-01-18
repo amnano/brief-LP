@@ -60,7 +60,7 @@ a:hover {
 body {
     background-color: #000617;
     color: #F4F5F8;
-    background-image: linear-gradient(#15203c 0%, #000617 100%);
+   /* background-image: linear-gradient(#15203c 0%, #000617 100%);*/
 }
 
 @keyframes Appear {

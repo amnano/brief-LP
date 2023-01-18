@@ -21,12 +21,21 @@ body {
 
 /* Add some basic styling for the header */
 header {
+    max-width: 870px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
     font-size: var(--small);
     margin-bottom: 5%;
+    position: fixed;
+    width: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin: auto;
+   
 }
 
 header img {
