@@ -14,7 +14,7 @@
 //this has a duration and animates the playhead on the Lottie animation for a smoother result
 ScrollLottie({
     target: '#animationWindow',
-    path: 'https://lottie.host/ee32daa6-baef-4459-8f13-de95ef6e0849/oHYKiMKGGU.json', 
+    path: 'https://assets10.lottiefiles.com/packages/lf20_Xn0TxqtIyp.json', 
     duration: 4, 
-    speed: 'slow'
+    speed: 'medium'
    });

@@ -20,20 +20,15 @@
     <header>
         <!-- Add the logo and title to the left corner of the header -->
         <div style="display: flex;flex-direction: row;align-items: center;gap:10px;">
-            <div>
-            <img src="logo.png" alt="🦴 Dead simple landing page" width="50">
-        </div>
-        Dead simple landing page</div>
+            <img src="src/_logo.png" alt="brief" width="50">
+       brief</div>
         <!-- Add a button and a link to the right corner of the header -->
         <div style="gap: 30px;display: flex;align-items: inherit;">
-            <button>Download</button>
+            <button>Sign-in</button>
             <a href="#">Link</a>
         </div>
     </header>
     
-
-    <div id="animationWindow">
-    </div>
 
 
     <div class="hero">
@@ -42,23 +37,32 @@
 
         <!-- Add a bold text and a light text above it on the left side of the hero section -->
         <div class="headline">
+            <img src="src/_logo.png" alt="brief">
             <h2>Stay in the loop</h2>
-            <p style="font-size: var(--medium); color: #8A8F98; font-weight: 400;margin: 0px;">AI-powered summaries to navigate busy online chats</p>
-            <button onclick="location.href='http://www.example.com'" style="margin-top: 10px;"> Fork on Github</button>
+            <p style="font-size: var(--medium); color: #FAFAFA; font-weight: 300;margin: 0px;">AI-powered summaries <br> to navigate busy online chats</p>
+           <div style="display: flex; flex-direction: row; gap:20px; align-content: center; align-items: center;margin: auto;">
+            <button onclick="location.href='http://www.example.com'" style="margin-top: 10px;"> Discord</button>
+            <button onclick="location.href='http://www.example.com'" style="margin-top: 10px;"> Slack</button>
+            <button onclick="location.href='http://www.example.com'" style="margin-top: 10px;"> Teams</button>
+            </div>
         </div>
 
-        <!-- Add an image on the right side of the hero section -->
-        <img src="hero-image.png" alt="Hero Image"class="animated">
+        <!-- Add an image on the right side of the hero section 
+        <img src="hero-image.png" alt="Hero Image"class="animated">-->
     </div>
-    <div class="hero">
+
+    <div id="animationWindow" style="max-width: 500px; margin: auto;">
+    </div>
+
+ <!--   <div class="hero">
 
         <div class="headline-feature">
             <h2>Feature blab</h2>
             <p style="font-size: var(--medium); color: #8A8F98; font-weight: 400;margin: 0px;">AI-powered summaries to navigate busy online chats</p>
         </div>
-
-         <!-- Add an image on the right side of the hero section -->
-         <img src="hero-image.png" alt="Hero Image">
+-->
+         <!-- Add an image on the right side of the hero section 
+         <img src="hero-image.png" alt="Hero Image">-->
          
   
 
@@ -66,10 +70,18 @@
     </div>
     <footer>
         <!-- Add a link on the left side of the footer -->
-        <a href="#">Link</a>
+
+
+        <!-- Begin Mailchimp Signup Form -->
+
+
+        <div>Built by <br> <a href="http://molto.design">molto.design</a></div> <div>Subscribe<br><a href="http://eepurl.com/hPJTyDRecieve"> Our latest experiments in your inbox</a> <br></div>
+	
+
+<!--End mc_embed_signup-->
 
         <!-- Add a link on the right side of the footer -->
-        <a href="#">Link</a>
+   
     </footer>
 </body>
 
