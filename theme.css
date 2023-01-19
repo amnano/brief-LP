@@ -73,30 +73,17 @@ body {
 
 @keyframes Appear {
     0% {
-      transform: translateY(-3%);
-      opacity: 0;
-      filter: blur(4px);
+      filter: blur(1px);
     }
     100% {
-      transform: translateX(0);
-      opacity: 1;
       filter: blur(0px);
     }
   }
 
-  @keyframes Appear-static {
+  @keyframes Appear-down {
     0% {
       opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @keyframes Appear-up {
-    0% {
-      opacity: 0;
-      transform: translateY(3%);
+      transform: translateY(-10%);
     }
     100% {
       opacity: 1;
@@ -105,15 +92,13 @@ body {
   }
 
 
-.headline
-{  animation: 0.6s ease-out 0s 1 Appear;}
-
-.hero .animated 
-{  animation: 1.5s ease-in 0s 1 Appear-up;}
+h2 {
+    animation:  1.3s ease-in 0s 1 Appear;
+}
 
 header,
 footer 
-{  animation: 1s ease-out 0s 1 Appear-static;}
+{  animation: 1s ease-out 0s 1 Appear-down;}
 
 
 button {
@@ -150,14 +135,14 @@ button:hover {
 }
 
 button:disabled {
-    background-color: #FAFBFC;
+    background-color:#313436;
     border-color: rgba(27, 31, 35, 0.15);
     color: #959DA5;
     cursor: default;
 }
 
 button:active {
-    background-color: #EDEFF2;
+    background-color: #313436;
     box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
     transition: none 0s;
 }
@@ -212,4 +197,27 @@ footer a {
 footer {
     justify-content: flex-start;
     gap: 10%;
+    padding: 0;
 }
+
+
+@keyframes Cloud {
+    0% {
+      transform: translateX(-300px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+
+.glow {
+    width: 150px;
+    height: 150px;
+    background-color: #16171800;
+  position: absolute;
+    box-shadow: 200px 100px 70px 20px #161718;
+    /* in order: x offset, y offset, blur size, spread size, color */
+    /* blur size and spread size are optional (they default to 0) */
+    animation: 5s ease-out 0s 1 Cloud;
+  }

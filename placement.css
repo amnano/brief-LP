@@ -39,7 +39,7 @@ header {
 }
 
 header img {
-max-height: var(--small);
+max-height: 26px;
 }
 
 /* Add some basic styling for the hero section */
@@ -66,8 +66,8 @@ footer {
     align-items: center;
     padding: 0.5rem 1rem;
     font-size: var(--small);
-    margin-top: 5%;
-    margin-bottom: 8%;
+    margin-top: 0%;
+    margin-bottom: 3%;
 }
 
 
@@ -97,4 +97,5 @@ h2{
     font-size: var(--vlarge);
     margin: 0ch;
     font-weight: 550;
+    z-index: 1;
 }

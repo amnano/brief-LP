@@ -11,6 +11,16 @@ html {
     padding: 0;
 }
 
+@media screen and (max-width: 900px) {
+  header {
+padding: 4%;
+  }
+
+  footer {
+    padding: 4%;
+      }
+}
+
 .fix{
 position: fixed;
 color: aliceblue;
