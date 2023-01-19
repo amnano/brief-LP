@@ -13,6 +13,7 @@
     font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -194,11 +195,13 @@ footer a {
     color: #959DA5;
 }
 
-footer {
+.footer-container {
+    display: flex;
+    padding-bottom: 30px;
     justify-content: flex-start;
     gap: 10%;
-    padding: 0;
-}
+    }
+
 
 
 @keyframes Cloud {
@@ -221,3 +224,5 @@ footer {
     /* blur size and spread size are optional (they default to 0) */
     animation: 5s ease-out 0s 1 Cloud;
   }
+
+
