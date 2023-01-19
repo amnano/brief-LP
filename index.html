@@ -25,8 +25,8 @@
        brief</div>
         <!-- Add a button and a link to the right corner of the header -->
         <div style="gap: 30px;display: flex;align-items: inherit;">
-            <button onclick="location.href='https://discord.com/api/oauth2/authorize?client_id=1058007439963852841&permissions=380104682496&scope=bot'" style="color: #7289DA;"> Add to Discord</button>
-            <a href="https://airtable.com/shrcfhkGAemsx71Qf?prefill_Product=Brief">Join Beta</a>
+            <button onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=1058007439963852841&permissions=380104682496&scope=bot', '_blank')" style="margin-top: 10px;color: #7289DA;">Add to Discord</button>
+            <a href="https://airtable.com/shrcfhkGAemsx71Qf?prefill_Product=Brief" target="_blank">Join Beta</a>
         </div>
     </header>
     
@@ -37,15 +37,15 @@
         
 
         <!-- Add a bold text and a light text above it on the left side of the hero section -->
-        <div class="headline">
+        <div class="headline" style="z-index: 2;">
             <img src="https://github.com/amnano/brief-LP/blob/master/src/_logo.png?raw=true" alt="brief">
             <h2>Stay in the loop</h2>
             <div class="glow"> </div>
             <p style="font-size: var(--medium); color: #FAFAFA; font-weight: 300;margin: 0px;">AI-powered summaries <br> to navigate busy online chats</p>
            <div style="display: flex; flex-direction: row; gap:20px; align-content: center; align-items: center;margin: auto;">
-            <button onclick="location.href='https://discord.com/api/oauth2/authorize?client_id=1058007439963852841&permissions=380104682496&scope=bot'" style="margin-top: 10px;"> Discord</button>
-            <button onclick="location.href='https://airtable.com/shrcfhkGAemsx71Qf?prefill_Product=Brief&prefill_Chat+App=Slack'" style="margin-top: 10px;"> Slack</button>
-            <button onclick="location.href='https://airtable.com/shrcfhkGAemsx71Qf?prefill_Product=Brief&prefill_Chat+App=Teams'" style="margin-top: 10px;"> Teams</button>
+            <button onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=1058007439963852841&permissions=380104682496&scope=bot', '_blank')" style="margin-top: 10px;">Discord</button>
+            <button onclick="window.open('https://airtable.com/shrcfhkGAemsx71Qf?prefill_Product=Brief&prefill_Chat+App=Slack', '_blank')" style="margin-top: 10px;">Slack</button>
+            <button onclick="window.open('https://airtable.com/shrcfhkGAemsx71Qf?prefill_Product=Brief&prefill_Chat+App=Teams', '_blank')" style="margin-top: 10px;">Teams</button>
             </div>
         </div>
 
@@ -53,7 +53,7 @@
         <img src="hero-image.png" alt="Hero Image"class="animated">-->
     </div>
 
-    <div id="animationWindow" style="max-width: 500px; margin: auto;">
+    <div id="animationWindow" style="max-width: 500px; margin: auto; z-index: 0;" >
     </div>
 
  <!--   <div class="hero">
