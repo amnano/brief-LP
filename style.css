@@ -1,0 +1,47 @@
+body {
+    background-color: #161718;
+    overflow-x: hidden;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+padding: 4%;
+  }
+
+  footer {
+    padding: 4%;
+      }
+}
+
+.fix{
+position: fixed;
+color: aliceblue;
+}
+
+
+@keyframes Appear {
+    0% {
+      opacity: 0;
+      filter: blur(4px);
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0px);
+    }
+  }
+
+#animationWindow {
+    width: 100%;
+    height: 100%;
+    animation: 0.4s ease-in 0s 1 Appear;
+}
+
+

@@ -3,6 +3,7 @@
     --small: 14px;
     --medium: 19px;
     --large: 38px;
+    --vlarge: 48px;
 }
 
 /* Use the Inter font for the page */
@@ -28,9 +29,23 @@ img {
     border-radius: 20px;
 }
 
+button img {
+    height: var(--small);
+    width: var(--small);
+    max-width: var(--small);
+    border-radius: 0px;
+}
+
 .headline {
-    margin-top: 7%;
-    margin-bottom: 10%;
+    display: flex;
+    gap: 3rem;
+    margin-top: 16%;
+    margin-bottom: -2%;
+}
+
+.headline img {
+max-width: 4rem;
+margin: auto;
 }
 
 .headline-feature {
@@ -51,37 +66,24 @@ a:hover {
 }
 
 body {
-    background-color: #000617;
+    background-color: #161718;
     color: #F4F5F8;
-    background-image: linear-gradient(#15203c 0%, #000617 100%);
+   /* background-image: linear-gradient(#15203c 0%, #000617 100%);*/
 }
 
 @keyframes Appear {
     0% {
-      transform: translateY(-3%);
-      opacity: 0;
-      filter: blur(4px);
+      filter: blur(1px);
     }
     100% {
-      transform: translateX(0);
-      opacity: 1;
       filter: blur(0px);
     }
   }
 
-  @keyframes Appear-static {
+  @keyframes Appear-down {
     0% {
       opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @keyframes Appear-up {
-    0% {
-      opacity: 0;
-      transform: translateY(3%);
+      transform: translateY(-10%);
     }
     100% {
       opacity: 1;
@@ -90,25 +92,23 @@ body {
   }
 
 
-.headline
-{  animation: 0.6s ease-out 0s 1 Appear;}
-
-.hero img 
-{  animation: 1.5s ease-in 0s 1 Appear-up;}
+h2 {
+    animation:  1.3s ease-in 0s 1 Appear;
+}
 
 header,
 footer 
-{  animation: 1s ease-out 0s 1 Appear-static;}
+{  animation: 1s ease-out 0s 1 Appear-down;}
 
 
 button {
     appearance: none;
-    background-color: #F4F5F8;
+    background-color:  #1b1c1d;
     border: 1px solid rgba(27, 31, 35, 0.15);
     border-radius: 6px;
     box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
     box-sizing: border-box;
-    color: #24292E;
+    color: #FAFAFA;
     cursor: pointer;
     display: inline-block;
     font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -129,20 +129,20 @@ button {
 
 
 button:hover {
-    background-color: #eaebee;
+    background-color: #161718;
     text-decoration: none;
     transition-duration: 0.1s;
 }
 
 button:disabled {
-    background-color: #FAFBFC;
+    background-color:#313436;
     border-color: rgba(27, 31, 35, 0.15);
     color: #959DA5;
     cursor: default;
 }
 
 button:active {
-    background-color: #EDEFF2;
+    background-color: #313436;
     box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
     transition: none 0s;
 }
@@ -179,33 +179,45 @@ body {
 }
 
 header button {
-    appearance: none;
-    background-color: #15203c;
-    border: 1px solid #8A8F98;
-    border-radius: 6px;
-    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
-    box-sizing: border-box;
-    color: #F4F5F8;
-    cursor: pointer;
-    display: inline-block;
-    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    list-style: none;
-    padding: 6px 16px;
-    position: relative;
-    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: middle;
-    white-space: nowrap;
-    word-wrap: break-word;
+    background-color: #1b1c1d;
+    color: #FAFAFA;
 }
 
 header button:hover {
-    background-color: #060d22;
+    background-color: #161718;
     text-decoration: none;
     transition-duration: 0.1s;
 }
+
+footer a {
+    text-decoration:dashed;
+    color: #959DA5;
+}
+
+footer {
+    justify-content: flex-start;
+    gap: 10%;
+    padding: 0;
+}
+
+
+@keyframes Cloud {
+    0% {
+      transform: translateX(-300px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+
+.glow {
+    width: 150px;
+    height: 150px;
+    background-color: #16171800;
+  position: absolute;
+    box-shadow: 200px 100px 70px 20px #161718;
+    /* in order: x offset, y offset, blur size, spread size, color */
+    /* blur size and spread size are optional (they default to 0) */
+    animation: 5s ease-out 0s 1 Cloud;
+  }

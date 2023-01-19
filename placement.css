@@ -21,12 +21,25 @@ body {
 
 /* Add some basic styling for the header */
 header {
+    max-width: 870px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 0 2rem 0;
     font-size: var(--small);
     margin-bottom: 5%;
+    position: fixed;
+    width: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin: auto;
+   
+}
+
+header img {
+max-height: 26px;
 }
 
 /* Add some basic styling for the hero section */
@@ -39,7 +52,7 @@ header {
 }
 
 .headline {
-    max-width: 280px;
+    /*max-width: 280px;*/
     display: flex;
     flex-direction: column;
     gap: 1.1vw;
@@ -53,7 +66,8 @@ footer {
     align-items: center;
     padding: 0.5rem 1rem;
     font-size: var(--small);
-    margin-top: 15%;
+    margin-top: 0%;
+    margin-bottom: 3%;
 }
 
 
@@ -80,6 +94,8 @@ img {
 }
 
 h2{
-    font-size: var(--large);
+    font-size: var(--vlarge);
     margin: 0ch;
+    font-weight: 550;
+    z-index: 1;
 }
